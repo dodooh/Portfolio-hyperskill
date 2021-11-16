@@ -1,7 +1,12 @@
 const openModalButtons = document.querySelectorAll('[data-window-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const toggleButton = document.getElementsByClassName('hamburger')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.windowTarget)

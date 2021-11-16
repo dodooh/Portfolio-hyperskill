@@ -3,20 +3,29 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
+    <nav class="navbar" id="menu">
+        <div class="brand-title">Nguyen Nghia</div>
+        <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contacts  ">Contact</a>
-            <a href="#">Home</a>
-        </nav>
-        <img src="images/bg.jpg" alt="background" class="bg-img">
-        <h1>Nghia Nguyen,<br> Front-end developer</h1>
-
+        <div id="header-image"><h1>Nghia Nguyen,<br> Software and Web Developer</h1></div>
     </header>
 
     <section id="about">
@@ -33,7 +42,7 @@
     </section>
 
     <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2>My Portfolio</h2>
         <div class="container-projects">
             <div class="project">
                 <!--            POP UP-->
