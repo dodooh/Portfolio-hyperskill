@@ -39,6 +39,7 @@ header h1 {
 
 #about {
     background-color: grey;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     padding: 40px 220px;
@@ -55,9 +56,15 @@ header h1 {
 }
 #portfolio {
     display: flex;
-    margin: 20px 40px;
     flex-direction: column;
     align-items: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 20px 40px;
+}
+#portfolio h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 .container-projects {
     margin-top: 20px;
@@ -68,22 +75,38 @@ header h1 {
     overflow: hidden;
 }
 .project {
-    width: 480px;
-    height: 480px;
+    width: 320px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px
 }
 .project img {
     width: 80%;
     padding: 20px 0;
 }
-.project p {
-
+.project button {
+    background-color: black;
+    height: 40px;
+    padding: 4px 8px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.12rem;
 }
 #contacts {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    padding-bottom: 20px;
 }
 #contacts h2 {
     padding: 20px;
@@ -114,7 +137,6 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 500ms ease-in-out;
     border: 2px solid black;
     border-radius: 10px;
     z-index: 10;
@@ -124,6 +146,7 @@ footer {
 }
 
 .window.active {
+    transition: 500ms ease-in;
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -160,10 +183,11 @@ footer {
     right: 0;
     background-color: rgba(0,0,0,.5);
     pointer-events: none;
-    transition: 500ms ease-in-out;
+
 }
 
 #overlay.active {
+    transition: 500ms ease-in;
     opacity: 1;
     pointer-events: all;
 }

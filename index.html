@@ -35,28 +35,44 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="container-projects">
-            <button data-window-target="#window" class="open-window">Virtual Piano</button>
-            <div class="window" id="window">
-                <div class="window-head">
-                    <div class="title"><h2>Virtual Piano</h2></div>
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="window-body">
-                    <p>You can see the project at the following link: <a href="https://alena2020.github.io/Virtual-Piano/" target="_blank">virtual-piano</a></p>
-                    <br>
-                    <p>I did this project when I was studying the frontend on HyperSkill. I created
-                        a web page with Virtual Piano, learned some HTML basics and some JS basics
-                        and learned that CSS can easily make a beautiful design.</p>
-                </div>
-            </div>
-            <div id="overlay"></div>
             <div class="project">
+                <!--            POP UP-->
+                <div class="window" id="window-flashcards">
+                    <div class="window-head">
+                        <div class="title"><h2>Flash Cards</h2></div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="window-body">
+                        <p>You can see the project at the following link: <a href="https://alena2020.github.io/Virtual-Piano/" target="_blank">flash-cards</a></p>
+                        <br>
+                        <p>I did this project when I was studying the frontend on HyperSkill. I created
+                            a web page with Flash Cards, learned some HTML basics and some JS basics
+                            and learned that CSS can easily make a beautiful design.</p>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+                <!--            END POP UP-->
+                <button data-window-target="#window-flashcards" class="open-window">Flash Cards</button>
                 <img src="images/project1.png" alt="flashcards" width="500">
-                <p>Flash Cards</p>
             </div>
             <div class="project">
+                <!--            POP UP-->
+                <div class="window" id="window-piano">
+                    <div class="window-head">
+                        <div class="title"><h2>Virtual Piano</h2></div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="window-body">
+                        <p>You can see the project at the following link: <a href="https://alena2020.github.io/Virtual-Piano/" target="_blank">virtual-piano</a></p>
+                        <br>
+                        <p>I did this project when I was studying the frontend on HyperSkill. I created
+                            a web page with Virtual Piano, learned some HTML basics and some JS basics
+                            and learned that CSS can easily make a beautiful design.</p>
+                    </div>
+                </div>
+                <!--            END POP UP-->
+                <button data-window-target="#window-piano" class="open-window">Virtual Piano</button>
                 <img src="images/project2.png" alt="piano">
-                <p>Piano</p>
             </div>
         </div>
 
