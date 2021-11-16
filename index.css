@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace, sans-serif;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+header nav {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+header h1 {
+    position: absolute;
+    z-index: 1;
+    top: 450px;
+    left: 150px;
+    color: white;
+}
+
+#about {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    padding: 40px 220px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-me__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px
+}
+#portfolio {
+    display: flex;
+    margin: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.container-projects {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+.project {
+    width: 480px;
+    height: 480px;
+    text-align: center;
+}
+.project img {
+    width: 80%;
+    padding: 20px 0;
+}
+.project p {
+
+}
+#contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+#contacts h2 {
+    padding: 20px;
+}
+#contacts p {
+    padding-bottom: 20px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials a {
+    opacity: .5;
+    padding: 0 10px;
+}
+footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 500ms ease-in-out;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.window.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.window-head {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.window-head .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.window-head .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none   ;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.window-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+    transition: 500ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
